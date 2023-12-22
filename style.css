@@ -1,0 +1,104 @@
+/* imported a font style */
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+/* background image to add some color to the plain white background */
+body {
+    background-image: url("https://img.freepik.com/free-vector/vibrant-pink-watercolor-painting-background_53876-58931.jpg?size=626&ext=jpg&ga=GA1.1.2116175301.1701561600&semt=ais") !important;
+    background-size: cover;
+}
+
+/* styling the welcome headline */
+.title {
+    color: rgb(91, 16, 212);
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+    padding-top: 50px;
+
+}
+
+/* styling the second line */
+.display {
+    color: rgb(91, 16, 212);
+    font-family: 'Sriracha', cursive;
+    font-weight: 500;
+    font-size: 20pt;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+/* styling the line the appears below the game at the completion of the game */
+.display-player {
+    color: rgb(91, 16, 212);
+    font-family: 'Sriracha', cursive;
+    font-size: 20pt;
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 40px;
+}
+
+/* formatting the main bootstrap grid */
+.container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+    row-gap: 5px;
+    column-gap: 5px;
+ } 
+
+
+/* clears the message that appears at the completion of the game*/ 
+.hide {
+    display: none;
+}
+
+
+/* the main formatting of the game grid */
+.box { 
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(80, 2, 153);
+    align-items:center;
+    justify-content: center;
+    background-color: crimson;
+    font-size:50pt;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkslategrey;
+    cursor: pointer;
+} 
+
+/* colors X player actions */
+.playerX {
+    color: #00545e;
+}
+
+/* colors O player actions */
+.playerO {
+    color: #62b306b9;
+}
+
+/* centering the restart button */
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+/* formatting the inside of the button */
+.controls button {
+    color: white;
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15pt;
+}
+
+
+

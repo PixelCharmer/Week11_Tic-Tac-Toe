@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <!-- created the heading for the game inclduing the line to show the who's turn it is in the game -->
+    <div class="background">
+        <div class="title">
+            <h1>Welcome to Tic-Tac-Toe</h1>
+        </div>
+        <div class="display">
+            <span class="display-player playerX">X</span>, it is your turn!
+        </div>
+        <!-- created the grid with bootstrap container class and each line represents a box in the game-->
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+        <!-- this is the button at the bottom of the game to reset. After the button is clicked it clears the game and results-->
+        <div class="display announcer hide"></div>
+        <div class="controls">
+            <button id="reset" class="btn btn-primary">Restart</button>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
